@@ -1,0 +1,10 @@
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from qiskit_aer import AerSimulator
+from qiskit.circuit.library import ZZFeatureMap, RealAmplitudes
+from qiskit_aer.primitives import EstimatorV2
+# from qiskit.algorithms.optimizers import COBYLA
+from scipy.optimize import minimize
+import pennylane as qml
+from qiskit_aer.noise import NoiseModel, depolarizing_error
